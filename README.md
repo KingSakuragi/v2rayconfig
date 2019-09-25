@@ -222,7 +222,7 @@ brew cask install v2rayu
             "settings":{
                 "vnext":[
                     {
-                        "address":"www.kingking.fun",
+                        "address":"www.baidu.com",
                         "users":[
                             {
                                 "id":"uuid", #需要和服务端对应
