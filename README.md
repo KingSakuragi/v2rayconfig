@@ -10,7 +10,11 @@ firewalld.service <br>
 > 查看已开放端口 &ensp;&ensp;&ensp;&ensp;  &ensp;&ensp;&ensp;
 firewall-cmd --zone=public --list-ports <br>
 > 添加开放端口&ensp;&ensp;&ensp;&ensp;  &ensp;&ensp;&ensp;&ensp;&ensp; 
-firewall-cmd --zone=public --add-port=80/tcp --permanent
+firewall-cmd --zone=public --add-port=80/tcp --permanent <br>
+> 删除开放端口&ensp;&ensp;&ensp;&ensp;  &ensp;&ensp;&ensp;&ensp;&ensp; 
+firewall-cmd --zone=public --remove-port=80/tcp --permanent <br>
+> 重启后生效 &ensp;&ensp;&ensp;&ensp;&ensp;  &ensp;&ensp;&ensp;&ensp;&ensp; 
+firewall-cmd --reload
 ###### 工具
 
 ```
