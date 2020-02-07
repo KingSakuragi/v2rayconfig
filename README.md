@@ -44,8 +44,8 @@ firewall-cmd --reload
          server_name  www.kingking.fun;
          root         /usr/share/nginx/html;
 
-         ssl_certificate /etc/ssl/cert.crt;
-         ssl_certificate_key /etc/ssl/private/cert.key;
+         ssl_certificate /etc/letsencrypt/live/kingking.fun/fullchain.pem;
+         ssl_certificate_key /etc/letsencrypt/live/kingking.fun/privkey.pem;
          ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
          ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:HIGH:!aNULL:!MD5:!RC4:!DHE;
          ssl_prefer_server_ciphers on;
